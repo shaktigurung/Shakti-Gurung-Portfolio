@@ -1,0 +1,96 @@
+body {
+	overflow:hidden; 		/* needed to eliminate scrollbars caused by the background image */
+	padding:0;margin:0;		/* necesarry for the raster to fill the screen */
+	height:100%;width:100%;
+}
+
+#bgimg {
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	z-index: -1;
+}
+
+#Container{
+	position:absolute;
+	z-index: 5;				/* Place the new body above the background image */
+	overflow:auto; 			/* restore scrollbars for the content */
+	height:100%;width:100%;	/* Make the new body fill the screen */
+	background: url('../img/raster.png'); /* this is just a fancy raster, you can remove it; I kinda like it though */
+}
+
+#MainContainer {
+    width: 800px;
+    height: 1500px;
+    margin: auto;
+    margin-top: 60px;
+    padding-top: 10px;
+    background:rgba(0,0,0,.8);
+    
+}
+#MainContainer h1 {
+    color:#fff;
+    font-family: 'Kitchenpolice', helvetica, sans-serif;
+    font-size:60px;
+    font-weight: normal;
+    text-decoration:none;
+    text-align:center;
+}
+
+
+
+#Grid {
+    margin-top: 20px;
+}
+#Grid h2{
+    color: #fff;
+    text-align: left;
+    margin-left: 65px;
+    font-size: 30px;
+    font-family: 'Lobster', helvetica, sans-serif;
+    margin-bottom: 3px;
+    font-weight: normal;
+}
+#Grid p{
+    color: #fff;
+    text-align: left;
+    margin-left: 65px;
+    margin-bottom: 3px;
+    font-size: 12px;
+    font-family: 'Lobster', helvetica, sans-serif;
+    margin-top: 0px;
+    width: 650px;
+    line-height: 18px;
+}
+
+#Thumbnail{
+	
+	 margin-left: 65px;
+	
+}
+#Thumbnail img { 
+	 
+    margin: 20px 10px 20px 10px;
+    border: 3px solid #000;
+    image-width: 200px;
+    image-height: 150px;
+}
+#Thumbnail a:hover img{
+    border: 3px solid #fff;
+}
+
+@font-face {
+    font-family:'Kitchenpolice';
+    src: url('KITCHENPOLICE.ttf');
+    src: local('KITCHENPOLICE'), local('KITCHENPOLICE'), url('KITCHENPOLICE.ttf') format('truetype');    	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('Lobster_1.3.otf');
+    src: local('Lobster_1.3'),local('Lobster_1.3'), url('Lobster_1.3.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
