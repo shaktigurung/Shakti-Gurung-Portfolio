@@ -17,8 +17,9 @@ body{
 }
 .brief{
     margin: 0 100px 0 100px;
-    color:red;
-    
+}
+.btn btn-primary{
+   align-items: center;
 }
 .tab-content ul li{
 	list-style-type: none;	
